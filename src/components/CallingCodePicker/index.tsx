@@ -87,7 +87,7 @@ const CallingCodePicker: React.FC<ICallingCodePickerProps> = ({
 
   useEffect(() => {
     onValueChange(selectedCountry?.callingCode);
-  }, [selectedCountry, onValueChange]);
+  }, [selectedCountry]);
 
   function dismissPicker() {
     setIsPickerOpen(false);
